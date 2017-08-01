@@ -1,0 +1,30 @@
+{
+  "name": "upx",
+  "version": "1.0.0",
+  "description": "Node.js multiplatform wrapper for UPX - the Ultimate Packer for eXecutables",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/roccomuso/upx"
+  },
+  "keywords": [
+    "upx",
+    "packer",
+    "executables",
+    "wrapper",
+    "node",
+    "multiplatform",
+    "js"
+  ],
+  "author": "Rocco Musolino (roccomuso)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roccomuso/upx/issues"
+  },
+  "dependencies": {
+    "debug": "^2.6.8"
+  }
+}

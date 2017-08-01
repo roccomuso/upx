@@ -1,3 +1,11 @@
+# upx
+
+[![NPM Version](https://img.shields.io/npm/v/upx.svg)](https://www.npmjs.com/package/upx)
+[![Dependency Status](https://david-dm.org/roccomuso/upx.png)](https://david-dm.org/roccomuso/upx)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+<span class="badge-patreon"><a href="https://patreon.com/roccomuso" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
+
+> Node multiplatform wrapper for [UPX](https://github.com/upx/upx)
 
 ## Install
 
@@ -26,50 +34,32 @@ upx.start().then(function(stats){
   // ...
 })
 ```
+### Methods
 
-Usage: upx-linux-amd64 [-123456789dlthVL] [-qvfk] [-o file] file..
+**`upx(<path>)`** : path is the absolute path to the file to compress/decompress.
 
-Commands:
-  -1     compress faster                   -9    compress better
-  --best compress best (can be slow for big files)
-  -d     decompress                        -l    list compressed file
-  -t     test compressed file              -V    display version number
-  -h     give this help                    -L    display software license
+**`.output(<output>)`** : path to the output file.
 
-Options:
-  -q     be quiet                          -v    be verbose
-  -oFILE write output to 'FILE'
-  -f     force compression of suspicious files
-  --no-color, --mono, --color, --no-progress   change look
+**`.start()`** : Start the compress/decompress process.
 
-Compression tuning options:
-  --brute             try all available compression methods & filters [slow]
-  --ultra-brute       try even more compression variants [very slow]
+### Options
 
-Backup options:
-  -k, --backup        keep backup files
-  --no-backup         no backup files [default]
+The options below can be true or false.
 
-Overlay options:
-  --overlay=copy      copy any extra data attached to the file [default]
-  --overlay=strip     strip any extra data attached to the file [DANGEROUS]
-  --overlay=skip      don't compress a file with an overlay
-
-Options for djgpp2/coff:
-  --coff              produce COFF output [default: EXE]
-
-Options for dos/com:
-  --8086              make compressed com work on any 8086
-
-Options for dos/exe:
-  --8086              make compressed exe work on any 8086
-  --no-reloc          put no relocations in to the exe header
-
-Options for dos/sys:
-  --8086              make compressed sys work on any 8086
-
-Options for ps1/exe:
-  --8-bit             uses 8 bit size compression [default: 32 bit]
-  --8mib-ram          8 megabyte memory limit [default: 2 MiB]
-  --boot-only         disables client/host transfer compatibility
-  --no-align          don't align to 2048 bytes [enables: --console-run]
+| Option | Description |
+|--------|-------------|
+| `faster` | compress faster |
+| `better` | compress better |
+| `best` | compress best (can be slow for big files) |
+| `decompress` | decompress |
+| `list` | list compressed files |
+| `force` | force compression of suspicious files |
+| `brute` | try all available compression methods & filters (slow) |
+| `ultraBrute` | try even more compression variants (very slow) |
+| `overlayCopy` | copy any extra data attached to the file (default) |
+| `overlayStrip` | strip any extra data attached to the file (dangerous) |
+| `overlaySkip` | don't compress a file with an overlay |
+| `8086` | make compressed sys work on any 8086 (for dos) |
+| `noReloc` | put no relocations in to the exe header (for dos) |
+| `8bit` | uses 8 bit size compression (default: 32 bit) |
+| `8mibRam` | 8 megabyte memory limit (default 2MiB) |

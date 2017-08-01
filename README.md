@@ -3,7 +3,6 @@
 [![NPM Version](https://img.shields.io/npm/v/upx.svg)](https://www.npmjs.com/package/upx)
 [![Dependency Status](https://david-dm.org/roccomuso/upx.png)](https://david-dm.org/roccomuso/upx)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-<span class="badge-patreon"><a href="https://patreon.com/roccomuso" title="Donate to this project using Patreon"><img src="https://img.shields.io/badge/patreon-donate-yellow.svg" alt="Patreon donate button" /></a></span>
 
 > Node multiplatform wrapper for [UPX](https://github.com/upx/upx)
 

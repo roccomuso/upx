@@ -14,13 +14,9 @@
 ## Usage
 
 ```javascript
-const path = require('path')
 const upx = require('upx')(opts) // see options below
 
-let filePath = path.join(__dirname, 'Hello.exe')
-let outFile = path.join(__dirname, 'Compressed.exe')
-
-upx(filePath).output(outFile)
+upx('Hello.exe').output('Compressed.exe')
 upx.start().then(function(stats){
   /* stats:
   { cmd: 'compress',
@@ -34,6 +30,7 @@ upx.start().then(function(stats){
   // ...
 })
 ```
+
 ### Methods
 
 **`upx(<path>)`** : path is the absolute path to the file to compress/decompress.
@@ -63,3 +60,15 @@ The options below can be true or false.
 | `noReloc` | put no relocations in to the exe header (for dos) |
 | `8bit` | uses 8 bit size compression (default: 32 bit) |
 | `8mibRam` | 8 megabyte memory limit (default 2MiB) |
+
+## Debug
+
+set the env DEBUG: `DEBUG=upx node myScript.js`
+
+# Author
+
+Rocco Musolino ([@roccomuso](https://twitter.com/roccomuso))
+
+# License
+
+MIT

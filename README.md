@@ -4,7 +4,7 @@
 [![Dependency Status](https://david-dm.org/roccomuso/upx.png)](https://david-dm.org/roccomuso/upx)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-> Node multiplatform wrapper for [UPX](https://github.com/upx/upx)
+> Node cross-platform wrapper for [UPX](https://github.com/upx/upx)
 
 ## Install
 

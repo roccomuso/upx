@@ -1,6 +1,6 @@
 {
   "name": "upx",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Node.js cross-platform wrapper for UPX - the Ultimate Packer for eXecutables",
   "main": "index.js",
   "scripts": {

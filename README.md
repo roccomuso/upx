@@ -13,10 +13,11 @@
 ## Usage
 
 ```javascript
-const upx = require('upx')(opts) // see options below
+const UPX = require('upx')(opts) // see options below
 
-upx('Hello.exe').output('Compressed.exe')
-upx.start().then(function(stats){
+UPX('Hello.exe')
+.output('Compressed.exe')
+.start().then(function(stats){
   /* stats:
   { cmd: 'compress',
     name: 'Compressed.exe',

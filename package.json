@@ -25,6 +25,6 @@
     "url": "https://github.com/roccomuso/upx/issues"
   },
   "dependencies": {
-    "debug": "^2.6.8"
+    "debug": "^3.0.1"
   }
 }
